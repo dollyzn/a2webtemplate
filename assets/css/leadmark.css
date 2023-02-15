@@ -129,6 +129,10 @@ address {
   margin-right: 20px;
 }
 
+.riotgames:hover {
+  fill: #f00;
+}
+
 ol,
 ul,
 dl {
@@ -2952,8 +2956,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #ff511c;
-  border-color: #ff470f;
+  background-color: #c08104;
+  border-color: #c08104;
 }
 
 .btn-primary:focus,
@@ -5266,12 +5270,12 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.8);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-light .navbar-text {
@@ -11639,6 +11643,19 @@ textarea.form-control {
   fill: #000;
 }
 
+.navbar.custom-navbar.affix .riotgames:hover {
+  fill: #f00;
+}
+
+.navbar.custom-navbar.affix .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar.custom-navbar.affix .navbar-toggler {
+  color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
 .navbar.custom-navbar.affix .nav-link {
   color: #444;
 }
@@ -11966,6 +11983,8 @@ textarea.form-control {
 .section .section-subtitle {
   font-size: calc(13px + (13 - 13) * ((100vw - 320px) / (1200 - 320)));
   font-weight: 500;
+  max-width: 500px;
+  margin: 12px auto 0;
   margin-bottom: 0px;
   opacity: 0.9;
 }
@@ -12016,7 +12035,7 @@ textarea.form-control {
 
 .section.has-img-bg {
   position: relative;
-  background: url(../imgs/section.jpg) no-repeat center top fixed;
+  background: url(../imgs/background.jpg) no-repeat center top fixed;
   background-size: cover;
   color: #fff;
 }
@@ -12037,16 +12056,39 @@ textarea.form-control {
   z-index: 1;
 }
 
+#firstTitle {
+  padding-top: 100px;
+}
+
+#blog .container .row .col-md-4 {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#blog .container .row .col-md-4:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.esports-title {
+  margin-bottom: 0.75rem;
+  color: rgb(11, 198, 227);
+}
+
 .portfolio-section .filters {
   border: 2px solid #dee2e6;
-  border-radius: 100px;
-  padding: 2px;
-  margin: 0 auto 20px;
-  max-width: 400px;
+  border-radius: 22px;
+  padding: 5px;
+  margin: 0 auto 10px;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -12104,7 +12146,7 @@ textarea.form-control {
   left: 200%;
   width: 100%;
   height: 100%;
-  background: rgba(255, 110, 66, 0.8);
+  background: rgba(0, 234, 255, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
