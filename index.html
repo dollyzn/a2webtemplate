@@ -144,12 +144,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#blog">Esports</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#contact">Contato</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a
-                href="https://signup.na.leagueoflegends.com/en/?_ga=2.81423383.1067705543.1676473903-1861233003.1676469041&_gl=1*n0lihb*_ga*MTg2MTIzMzAwMy4xNjc2NDY5MDQx*_ga_FXBJE5DEDD*MTY3NjQ4NjM0OC40LjEuMTY3NjQ4OTkwMi4yOS4wLjA."
+                href="#playnow"
                 class="ml-4 nav-link btn btn-primary btn-sm rounded"
                 >Jogue Agora!</a
               >
@@ -367,24 +367,26 @@
           </div>
         </div>
       </div>
-      <h6 class="section-title text-center" style="padding-top: 50px">
-        Melhore suas Habilidades
-      </h6>
-      <p style="width: 600px; margin: auto">
-        Campeões têm cinco habilidades principais, dois Feitiços de Invocador
-        especiais e até sete itens de uma vez. Descobrir a melhor ordem para
-        subir o nível das habilidades, quais Feitiços de Invocador usar e a
-        melhor itemização para seu Campeão será essencial para o sucesso da sua
-        equipe.
-      </p>
-      <h6 class="section-title text-center" style="padding-top: 50px">
-        Ganhe Recompensas!
-      </h6>
-      <div class="text-center">
-        <img
-          src="./assets/imgs/recompensas.png"
-          style="max-width: 100%; height: auto"
-        />
+      <div class="justify-content-center">
+        <h6 class="section-title text-center" style="padding-top: 50px">
+          Melhore suas Habilidades
+        </h6>
+        <p class="col-9" style="margin: auto">
+          Campeões têm cinco habilidades principais, dois Feitiços de Invocador
+          especiais e até sete itens de uma vez. Descobrir a melhor ordem para
+          subir o nível das habilidades, quais Feitiços de Invocador usar e a
+          melhor itemização para seu Campeão será essencial para o sucesso da
+          sua equipe.
+        </p>
+        <h6 class="section-title text-center" style="padding-top: 50px">
+          Ganhe Recompensas!
+        </h6>
+        <div class="text-center">
+          <img
+            src="./assets/imgs/recompensas.png"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
       </div>
     </section>
     <!-- End OF About Section -->
@@ -1253,9 +1255,8 @@
     <!-- End of Blog Section -->
 
     <!-- Testmonial Section -->
-    <section class="section" id="testmonial">
-      <div class="container">
-        <h6 class="section-title text-center mb-0">Testmonials</h6>
+
+    <!-- <h6 class="section-title text-center mb-0">Testmonials</h6>
         <h6 class="section-subtitle mb-5 text-center">What Our Clients Says</h6>
         <div class="row">
           <div class="col-md-4 my-3 my-md-0">
@@ -1309,76 +1310,298 @@
               </div>
             </div>
           </div>
+        </div> -->
+    <div
+      id="playnow"
+      style="
+        line-height: 0;
+        box-sizing: border-box;
+        bottom: 0;
+        overflow: hidden;
+      "
+    >
+      <header class="header">
+        <video
+          style="
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+          "
+          autoplay
+          muted
+          loop
+          src="./assets/imgs/video.webm"
+        ></video>
+        <div class="overlay">
+          <h1 class="subtitle">A sua lenda começa</h1>
+          <h1 class="title">AGORA</h1>
         </div>
-      </div>
-    </section>
+        <div class="shape">
+          <svg viewBox="0 0 1500 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M 0 240 L 1500.483 240 C 1500.483 240 1214.207 168.285 757.293 168.285 C 300.379 168.285 0 240 0 240 Z"
+            />
+          </svg>
+        </div>
+        <div class="mouse-icon"><div class="wheel"></div></div>
+      </header>
+    </div>
     <!-- End of Testmonial Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="section has-img-bg pb-0">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-5 my-3">
-            <h6 class="mb-0">Phone</h6>
-            <p class="mb-4">+ 123-456-7890</p>
-
-            <h6 class="mb-0">Address</h6>
-            <p class="mb-4">12345 Fake ST NoWhere AB Country</p>
-
-            <h6 class="mb-0">Email</h6>
-            <p class="mb-0">info@website.com</p>
-            <p></p>
-          </div>
-          <div class="col-md-7">
-            <form>
-              <h4 class="mb-4">Drop Us A Line</h4>
+        <form>
+          <div class="row align-items-center">
+            <div class="col-md-5 my-3">
+              <h6 class="mb-0 mt-4">Selecione o seu Campeão</h6>
+              <select class="custom-select mb-4">
+                <option value="">Selecione</option>
+                <option value="rengar">Rengar</option>
+                <option value="katarina">Katarina</option>
+                <option value="yasuo">Yasuo</option>
+                <option value="mordekaiser">Mordekaiser</option>
+                <option value="ahri">Ahri</option>
+                <option value="viktor">Viktor</option>
+                <option value="vayne">Vayne</option>
+                <option value="twitch">Twitch</option>
+                <option value="braum">Braum</option>
+                <option value="lulu">Lulu</option>
+                <option value="rammus">Rammus</option>
+                <option value="zac">Zac</option>
+              </select>
+              <div class="mb-4">
+                <div
+                  class="flex-wrap"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div class="classes mt-2">
+                    <h6 class="mb-3">Sua classe</h6>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="assn"
+                        name="classe"
+                        value="assassin"
+                        class="custom-control-input"
+                      />
+                      <label for="assn" class="custom-control-label"
+                        >Assassino</label
+                      >
+                    </div>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="fgt"
+                        name="classe"
+                        value="fighter"
+                        class="custom-control-input"
+                      />
+                      <label for="fgt" class="custom-control-label"
+                        >Lutador</label
+                      >
+                    </div>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="mg"
+                        name="classe"
+                        value="mage"
+                        class="custom-control-input"
+                      />
+                      <label for="mg" class="custom-control-label">Mago</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="marks"
+                        name="classe"
+                        value="marksmen"
+                        class="custom-control-input"
+                      />
+                      <label for="marks" class="custom-control-label"
+                        >Atirador</label
+                      >
+                    </div>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="sup"
+                        name="classe"
+                        value="support"
+                        class="custom-control-input"
+                      />
+                      <label for="sup" class="custom-control-label"
+                        >Suporte</label
+                      >
+                    </div>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="tk"
+                        name="classe"
+                        value="tank"
+                        class="custom-control-input"
+                      />
+                      <label for="tk" class="custom-control-label">Tank</label>
+                    </div>
+                  </div>
+                  <div class="rotas mt-2">
+                    <h6 class="mb-3">Sua rota</h6>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="top"
+                        name="lane"
+                        value="top"
+                        class="custom-control-input"
+                      />
+                      <label for="top" class="custom-control-label"
+                        >Rota do Barão</label
+                      >
+                    </div>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="jng"
+                        name="lane"
+                        value="jng"
+                        class="custom-control-input"
+                      />
+                      <label for="jng" class="custom-control-label"
+                        >Selva</label
+                      >
+                    </div>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="mid"
+                        name="lane"
+                        value="mid"
+                        class="custom-control-input"
+                      />
+                      <label for="mid" class="custom-control-label">Meio</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input
+                        type="radio"
+                        id="bottom"
+                        name="lane"
+                        value="bottom"
+                        class="custom-control-input"
+                      />
+                      <label for="bottom" class="custom-control-label"
+                        >Rota do Dragão</label
+                      >
+                    </div>
+                  </div>
+                  <div class="checkbox mt-2">
+                    <h6 class="mb-3">Seus items</h6>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        id="bota"
+                        name="item"
+                        value="bot"
+                        class="custom-control-input"
+                      />
+                      <label for="bota" class="custom-control-label"
+                        >Bota</label
+                      >
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        id="anel"
+                        name="item"
+                        value="anel"
+                        class="custom-control-input"
+                      />
+                      <label for="anel" class="custom-control-label"
+                        >Anel</label
+                      >
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        id="espada"
+                        name="item"
+                        value="esp"
+                        class="custom-control-input"
+                      />
+                      <label for="espada" class="custom-control-label"
+                        >Espada</label
+                      >
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        id="escudo"
+                        name="item"
+                        value="esc"
+                        class="custom-control-input"
+                      />
+                      <label for="escudo" class="custom-control-label"
+                        >Escudo
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <h4 class="mb-4">Conta</h4>
               <div class="form-row">
-                <div class="form-group col-sm-4">
+                <div class="form-group col-sm-10">
                   <input
                     type="text"
                     class="form-control text-white rounded-0 bg-transparent"
                     name="name"
-                    placeholder="Name"
+                    placeholder="Nome"
+                    required
                   />
                 </div>
-                <div class="form-group col-sm-4">
+                <div class="form-group col-sm-10">
                   <input
                     type="email"
                     class="form-control text-white rounded-0 bg-transparent"
                     name="Email"
-                    placeholder="Email"
+                    placeholder="E-mail"
+                    required
                   />
                 </div>
-                <div class="form-group col-sm-4">
+                <div class="form-group col-sm-10">
                   <input
-                    type="text"
+                    type="password"
                     class="form-control text-white rounded-0 bg-transparent"
-                    name="subject"
-                    placeholder="Subject"
+                    name="password"
+                    placeholder="Senha"
+                    required
                   />
-                </div>
-                <div class="form-group col-12">
-                  <textarea
-                    name="message"
-                    id=""
-                    cols="30"
-                    rows="4"
-                    class="form-control text-white rounded-0 bg-transparent"
-                    placeholder="Message"
-                  ></textarea>
                 </div>
                 <div class="form-group col-12 mb-0">
                   <button
                     type="submit"
                     class="btn btn-primary rounded w-md mt-3"
                   >
-                    Send
+                    Enviar
+                  </button>
+                  <button
+                    type="reset"
+                    class="btn btn-primary rounded w-md mt-3"
+                  >
+                    Limpar
                   </button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
-        </div>
+        </form>
         <!-- Page Footer -->
         <footer class="mt-5 py-4 border-top border-secondary">
           <p class="mb-0 small">
@@ -1395,6 +1618,7 @@
             Games, League of Legends e PvP.net são marcas registradas e marcas
             de serviço da Riot Games, Inc.
           </p>
+          <br />
           <p class="mb-0 small">
             Editado, modificado e adaptado por Natã, github:
             <a href="https://github.com/dollyzn">dollyzn</a>

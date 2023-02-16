@@ -2935,7 +2935,7 @@ textarea.form-control.is-invalid {
 .btn:focus,
 .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 110, 66, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(66, 132, 255, 0.25);
 }
 
 .btn.disabled,
@@ -2950,40 +2950,40 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #c28f2c;
-  border-color: #c28f2c;
+  background-color: #0bc4e2;
+  border-color: #0bc4e2;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #c08104;
-  border-color: #c08104;
+  background-color: #00b2cf;
+  border-color: #00b2cf;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 132, 94, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(94, 177, 255, 0.5);
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: #c28f2c;
-  border-color: #c28f2c;
+  background-color: #0bc4e2;
+  border-color: #0bc4e2;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ff470f;
-  border-color: #ff3d02;
+  background-color: #0bc4e2;
+  border-color: #0bc4e2;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 132, 94, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(94, 196, 255, 0.5);
 }
 
 .btn-secondary {
@@ -12123,7 +12123,7 @@ textarea.form-control {
 .portfolio-section .filters a.active {
   opacity: 1;
   border-radius: 100px;
-  background: #c28f2c;
+  background: #0bc4e2;
   color: #fff;
 }
 
@@ -12187,3 +12187,4 @@ textarea.form-control {
   opacity: 1;
   visibility: visible;
 }
+
