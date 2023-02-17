@@ -48,6 +48,7 @@
 *,
 *::before,
 *::after {
+  scroll-snap-type: y proximity;
   box-sizing: border-box;
 }
 
