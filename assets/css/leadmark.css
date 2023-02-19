@@ -12188,3 +12188,9 @@ textarea.form-control {
   opacity: 1;
   visibility: visible;
 }
+
+@media (min-width: 1460px) {
+  #ability {
+    max-width: 1100px;
+  }
+}
